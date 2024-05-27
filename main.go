@@ -21,7 +21,7 @@ var (
 
 	RequestDuration = prometheus.NewHistogram(prometheus.HistogramOpts{
 		Name:    "http_request_duration_seconds",
-		Help:    "Duration of HTTP requests in seconds",
+		Help:    "Duration of HTTP requests in mili seconds",
 		Buckets: prometheus.LinearBuckets(0.001, 0.005, 10),
 	})
 )
